@@ -1,7 +1,11 @@
 import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
+import { Asap_Condensed } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"] });
+const asap_condensed = Asap_Condensed({ subsets: ["latin"], weight: '400' });
 
 export const metadata = {
   title: "Blaze Signage",
@@ -11,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={oswald.className}>{children}</body>
     </html>
   );
 }
